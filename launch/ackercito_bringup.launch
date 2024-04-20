@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find ackercito_bringup)/launch/ackercito_core.launch"/>
+    <include file="$(find ackercito_bringup)/launch/ackercito_lidar.launch"/>
+    <include file="$(find ackercito_bringup)/launch/ackercito_imu.launch"/>
+</launch>

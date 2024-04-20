@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="footprint_tf_broadcaster" args="0 0 0.03700 0 0 0 base_footprint base_link 100" />
+    <node pkg="tf" type="static_transform_publisher" name="lidar_tf_broadcaster" args="0.05419 0 0.10275 1.570796 0 0 base_link scan 100" />
+    <node pkg="tf" type="static_transform_publisher" name="imu_tf_broadcaster"   args="0.03552 0 0.03790 0 0 3.141593 base_link imu 100" />
+    <node pkg="tf" type="static_transform_publisher" name="cam_tf_broadcaster"   args="0.12072 0 0.07250 0 0 0 base_link camera 100" />
+</launch>
